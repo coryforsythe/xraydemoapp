@@ -32,12 +32,6 @@ app.get('/:zipCode', (req, res) =>{
 })
 
 
-
-var segment = AWSXRay.getSegment();
-segment.addAnnotation('page', 'home');
-
-
-
 //Start the server
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 app.use(xrayExpress.closeSegment());
