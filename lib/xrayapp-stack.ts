@@ -69,7 +69,7 @@ export class XrayappStack extends cdk.Stack {
       desiredCount: 1, // Default is 1
       taskDefinition:taskDef,
       memoryLimitMiB: 2048, // Default is 512
-      listenerPort:3000,
+      listenerPort:80,
       publicLoadBalancer: true // Default is false
 
     });
